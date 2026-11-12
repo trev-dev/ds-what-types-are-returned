@@ -1,0 +1,23 @@
+{
+  "name": "ds-lsp-poc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit -p tsconfig.json",
+    "emit-dts": "tsc -p tsconfig.emit.json && cat dts-out/proofs/04-inferred-wrapper.d.ts"
+  },
+  "dependencies": {
+    "@bcgov/bc-sans": "2.1.2",
+    "@bcgov/design-system-react-components": "file:vendor/design-system-react-components-main.tgz",
+    "@internationalized/date": "3.12.4",
+    "ds-branch": "file:vendor/design-system-react-components-branch.tgz",
+    "react": "19.3.1",
+    "react-aria-components": "1.22.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "6.0.3"
+  }
+}
